@@ -12,5 +12,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        System.out.println("Hello Sujit java.lang.IllegalStateException: The git operation should not fail in this context");
     }
 }
