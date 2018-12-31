@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        card_view:cardBackgroundColor="@color/black"
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardElevation="4dp"
+        card_view:contentPadding="1dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/riderIdLinearLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/riderIdImage"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/riderid"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Id. : "
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/textViewRiderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/riderNameLinearLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/riderIdLinearLayout"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/riderNameImage"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/ridername"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Name. : "
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/textViewRiderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/riderNoLinearLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/riderNameLinearLayout"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/riderNoImage"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/riderNo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="No. : "
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textViewRiderNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/riderOrdersInHandLinearLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/riderNoLinearLayout"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/riderOrdersInHandImage"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/riderOrderInHand"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Orders in hand : "
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textViewRiderOrdersInHand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
