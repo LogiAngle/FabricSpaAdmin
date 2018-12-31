@@ -24,7 +24,7 @@ public class AnalyticsFragment extends Fragment{
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.analytics_pie_chart, null);
-        PieChart pieChart = (PieChart) view.findViewById(R.id.pieChart);
+        PieChart pieChart = view.findViewById(R.id.pieChart);
         //pieChart.setOnChartValueSelectedListener(this);
         ArrayList<Entry> entries = new ArrayList<>();
         entries.add(new Entry(14, 0));
