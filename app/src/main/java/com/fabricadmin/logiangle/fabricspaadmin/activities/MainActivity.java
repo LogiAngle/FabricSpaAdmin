@@ -3,6 +3,9 @@ package com.fabricadmin.logiangle.fabricspaadmin.activities;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -79,22 +82,30 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        Fragment fragment = null;
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_analytics) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_riderwise) {
+            fragment = new RiderFragment();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_orderwise) {
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_routing) {
 
         }
+
+        if(fragment!=null)
+        {
+            FragmentManager fragmentManager= getSupportFragmentManager();
+            FragmentTransaction ft= fragmentManager.beginTransaction();
+            ft.replace(R.id.frame_screen,fragment);
+
+            ft.commit();
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
