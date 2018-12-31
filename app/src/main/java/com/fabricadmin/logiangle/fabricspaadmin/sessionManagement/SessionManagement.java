@@ -1,4 +1,4 @@
-package com.fabricadmin.logiangle.fabricspaadmin.SessionManagement;
+package com.fabricadmin.logiangle.fabricspaadmin.sessionManagement;
 
 import android.content.Context;
 import android.content.SharedPreferences;
