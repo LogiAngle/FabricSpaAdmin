@@ -1,10 +1,10 @@
-package com.fabricadmin.logiangle.fabricspaadmin.sessionManagement;
+package com.fabricadmin.logiangle.fabricspaadmin.SessionManagement;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.fabricadmin.logiangle.fabricspaadmin.JavaClasses.AllConstants;
+import com.fabricadmin.logiangle.fabricspaadmin.javaClasses.AllConstants;
 
 public class SessionManagement {
     public static SharedPreferences getSharedPreferences(Context ctx)
