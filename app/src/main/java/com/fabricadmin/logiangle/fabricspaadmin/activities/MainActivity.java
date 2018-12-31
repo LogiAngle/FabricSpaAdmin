@@ -17,9 +17,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.fabricadmin.logiangle.fabricspaadmin.R;
+import com.fabricadmin.logiangle.fabricspaadmin.fragment.AnalyticsFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +89,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_analytics) {
-       //     fragment = new AnalyticsFragment();
+           // AnalyticsFragment a=new AnalyticsFragment();
+
+            fragment = new AnalyticsFragment();
             // Handle the camera action
         } else if (id == R.id.nav_riderwise) {
       //      fragment = new RiderFragment();

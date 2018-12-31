@@ -1,4 +1,4 @@
-package com.fabricadmin.logiangle.fabricspaadmin.JavaClasses;
+package com.fabricadmin.logiangle.fabricspaadmin.javaClasses;
 
 public class AllConstants {
 
