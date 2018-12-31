@@ -13,5 +13,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         System.out.println("Login activity blank");
+
+        System.out.print("First Push by santosh");
     }
 }
